@@ -38,7 +38,7 @@ class Context(object):
             mdata = metadata.to_map(stream.metadata)
             #root_metadata = mdata.get(())
             #if root_metadata and root_metadata.get('selected') is True:
-                self.selected_stream_ids.add(stream.tap_stream_id)
+            self.selected_stream_ids.add(stream.tap_stream_id)
 
     def get_bookmark(self, path):
         return bks_.get_bookmark(self.state, *path)
